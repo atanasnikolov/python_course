@@ -6,3 +6,8 @@ list_smaller = [x for x in list_numbers if number > x]
 
 print(list_smaller)
 
+
+# for x in list_numbers:
+#     if number > x:
+#         print(x)
+

@@ -1,5 +1,9 @@
-a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+numbers = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 
-a_even = [x for x in a if x % 2 == 0]
+numbers_even = [x for x in numbers if x % 2 == 0]
 
-print(a_even)
+print(numbers_even)
+
+# for x in numbers:
+#     if x % 2 == 0:
+#         print(x)
