@@ -1,0 +1,46 @@
+'i'.index(0) -- > shows the list index number
+'abcd'.index(c) -- > [2]
+
+
+try:
+except (expected error type):
+
+error types could be Name, Value ...
+
+variable = open('filename', encoding='utf-8')
+variable.read(Number of sybols to show)
+
+variable = open('filename', 'rb') --> read a file in bytes   (r - rear)
+x = variable.read(number)
+x.decode('utf-8')
+
+bytes .decode() --> string
+string .encode() --> bytes
+
+variable = open('filename', 'wb') --> write in file
+variable.write('text',encode('utf-8'))
+variable.flush() to add changes to file 
+variable.readline() -- > reads a whole line or read lines shows the whole file 
+opening the file again will rewrite everything
+
+variable = opne('filename', 'a') --> append (add text) it will start adding text at the end of the file
+variable.flush()
+
+with open('file') as f:
+	commands
+	commands
+
+after leaving the cycle the file is automatically closed.
+ 
+Python 3.10.6 (main, Nov 14 2022, 16:10:14) [GCC 11.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> f = open('test.txt')
+>>> f = open('test.txt', 'wb')
+>>> f.write("Test1\n".encode('utf-8'))
+6
+>>> f.write("Test2\n".encode('utf-8'))
+6
+>>> f.write("Test3\n".encode('utf-8'))
+6
+>>> f.flush()
+>>>
