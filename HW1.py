@@ -2,4 +2,4 @@
 x = int(input("Place a number: "))
 
 # умножава числото по 2 и след това го показва на екрана
-print(2*x)
+print(3*x)
